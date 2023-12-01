@@ -1,9 +1,9 @@
-export default class Model{
+export default class TicTacToeModel{
     #lista = [];
     #kikovetkezik="X";
     #vege=false
   constructor(){
-    this.#lista=["X", "O", " ", " ", " ", " ", " ", " ", " "]
+    this.#lista=[" ", " ", " ", " ", " ", " ", " ", " ", " "]
   }
     get lista(){
         return this.#lista

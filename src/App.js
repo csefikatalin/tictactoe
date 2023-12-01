@@ -1,11 +1,11 @@
 import "./App.css";
 /* import JatekTer from "./component/JatekTer"; */
 import React, { useState } from "react";
-import Model from "./model/Model.js";
+import TicTacToeModel from "./model/TicTacToeModel.js";
 import JatekTer from "./component/JatekTer.js";
 import "./component/JatekTer.css";
 
-const model = new Model();
+const model = new TicTacToeModel();
 
 function App() {
     const [lista, setLista] = useState(model.lista);
@@ -23,8 +23,6 @@ function App() {
             nyer_szoveg +=" nyert!"
         }
         setNyertes(nyer_szoveg)
-        
-
     }
     return (
         <div className="App">
@@ -36,7 +34,6 @@ function App() {
             <article>
                 {
                      <JatekTer lista={lista} kivalaszt={kivalaszt}/> 
-                
                 }
             </article>
             <aside>
